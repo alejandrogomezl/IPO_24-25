@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
     postalCode: String 
   },
   repairRequests: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Repair' }], // Si es cliente
+  vehicles: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Vehicle' }], // Si es cliente
   createdAt: { type: Date, default: Date.now }
 });
 
