@@ -12,7 +12,7 @@ app.use('/api/users', userRoutes);  // Añadimos las rutas de usuarios
 
 
 // Conexión a MongoDB
-mongoose.connect('mongodb://localhost:27017/mi-base-datos', {
+mongoose.connect('mongodb://localhost:27017/carup', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
