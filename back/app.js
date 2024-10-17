@@ -2,15 +2,15 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const userRoutes = require('./src/routes/users');
+
 const app = express();
 
-const userRoutes = require('./routes/userRoutes');
-const vehicleRoutes = require('./routes/vehicleRoutes');
-const repairRoutes = require('./routes/repairRoutes');
-const inventoryRoutes = require('./routes/inventoryRoutes');
-const invoiceRoutes = require('./routes/invoiceRoutes');
-const promotionRoutes = require('./routes/promotionRoutes');
+const userRoutes = require('./src/routes/userRoutes');
+const vehicleRoutes = require('./src/routes/vehicleRoutes');
+const repairRoutes = require('./src/routes/repairRoutes');
+const inventoryRoutes = require('./src/routes/inventoryRoutes');
+const invoiceRoutes = require('./src/routes/invoiceRoutes');
+const promotionRoutes = require('./src/routes/promotionRoutes.js');
 
 
 app.use(cors()); // Permitir peticiones desde otro dominio (Angular)
