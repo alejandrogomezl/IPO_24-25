@@ -9,7 +9,8 @@ const vehicleSchema = new mongoose.Schema({
   transmission: { type: String }, // Manual o Automático
   engine: { type: String },  // Tipo de motor
   inventoryCount: { type: Number, default: 1 },  // Número de unidades disponibles
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now },
+  image: { type: String }, // URL de la imagen
 });
 
 module.exports = mongoose.model('Vehicle', vehicleSchema);
