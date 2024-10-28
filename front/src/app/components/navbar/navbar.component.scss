@@ -1,0 +1,162 @@
+:root {
+  --primary-0: rgba(255, 255, 255, 1);
+  --secondary-400: rgba(89, 103, 128, 1);
+  --medium-type-14-font-family: "Plus Jakarta Sans", Helvetica;
+  --medium-type-14-font-weight: 500;
+  --medium-type-14-font-size: 14px;
+  --medium-type-14-letter-spacing: -0.28px;
+  --medium-type-14-line-height: 150%;
+  --medium-type-14-font-style: normal;
+}
+
+
+.nav-bar-top {
+  position: relative;
+  width: 1440px;
+  height: 124px;
+  background-color: var(--primary-0);
+  border: 1px solid;
+  border-color: #c3d4e966;
+}
+
+.nav-bar-top .profil-notification {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: absolute;
+  top: 40px;
+  left: 1122px;
+}
+
+.nav-bar-top .overlap-group-wrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.nav-bar-top .overlap-group {
+  border-radius: 90px;
+  position: relative;
+  height: 44px;
+}
+
+.nav-bar-top .vuesax-bold-heart {
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  top: 6px;
+  left: 8px;
+  background-image: url(https://github.com/alejandrogomezl/IPO_24-25/blob/Alejandrito/front/src/assets/images/logo.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.nav-bar-top .button {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  border-radius: 90px;
+  border: 1px solid;
+  border-color: #c3d4e966;
+  opacity: 0.8;
+}
+
+.nav-bar-top .img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 10px;
+}
+
+.nav-bar-top .notif {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 2px;
+  left: 31px;
+  background-color: #ff4423;
+  border-radius: 5.5px;
+}
+
+.nav-bar-top .profil {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-image: url(https://github.com/alejandrogomezl/IPO_24-25/blob/Alejandrito/front/src/assets/images/logo.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.nav-bar-top .logo {
+  position: absolute;
+  width: 148px;
+  height: 44px;
+  top: 39px;
+  left: 60px;
+  font-family: var(--bold-type-32-font-family);
+  font-weight: var(--bold-type-32-font-weight);
+  color: var(--primary-500);
+  font-size: var(--bold-type-32-font-size);
+  letter-spacing: var(--bold-type-32-letter-spacing);
+  line-height: var(--bold-type-32-line-height);
+  white-space: nowrap;
+  font-style: var(--bold-type-32-font-style);
+}
+
+.nav-bar-top .search {
+  position: absolute;
+  width: 494px;
+  height: 44px;
+  top: 40px;
+  left: 272px;
+}
+
+.nav-bar-top .overlap {
+  width: 492px;
+  background-color: var(--primary-0);
+  border-radius: 70px;
+  border: 1px solid;
+  border-color: #c3d4e966;
+  position: relative;
+  height: 44px;
+}
+
+.nav-bar-top .search-something {
+  position: absolute;
+  width: 149px;
+  height: 20px;
+  top: 11px;
+  left: 63px;
+  font-family: var(--medium-type-14-font-family);
+  font-weight: var(--medium-type-14-font-weight);
+  color: var(--secondary-400);
+  font-size: var(--medium-type-14-font-size);
+  text-align: justify;
+  letter-spacing: var(--medium-type-14-letter-spacing);
+  line-height: var(--medium-type-14-line-height);
+  white-space: nowrap;
+  font-style: var(--medium-type-14-font-style);
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.nav-bar-top .search-normal {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 9px;
+  left: 19px;
+  cursor: pointer;
+}
+
+.nav-bar-top .vuesax-linear-filter {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 9px;
+  left: 447px;
+}
