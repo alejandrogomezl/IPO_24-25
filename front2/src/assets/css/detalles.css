@@ -1,0 +1,1012 @@
+.car-buy {
+    background-color: #f6f7f9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .car-buy .div {
+    background-color: #f6f7f9;
+    width: 1440px;
+    height: 2037px;
+    position: relative;
+  }
+  
+  .car-buy .view {
+    position: absolute;
+    width: 492px;
+    height: 360px;
+    top: 193px;
+    left: 172px;
+    background-color: var(--primary-500);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .car-buy .overlap-group {
+    position: relative;
+    height: 360px;
+    background-image: url(./img/BG.png);
+    background-size: 100% 100%;
+  }
+  
+  .car-buy .tittle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+  
+  .car-buy .text-wrapper {
+    position: relative;
+    width: 372px;
+    margin-top: -1.00px;
+    font-family: var(--semibold-type-32-font-family);
+    font-weight: var(--semibold-type-32-font-weight);
+    color: var(--primary-0);
+    font-size: var(--semibold-type-32-font-size);
+    letter-spacing: var(--semibold-type-32-letter-spacing);
+    line-height: var(--semibold-type-32-line-height);
+    font-style: var(--semibold-type-32-font-style);
+  }
+  
+  .car-buy .safety-and-comfort {
+    position: relative;
+    width: 284px;
+    font-family: var(--medium-type-16-font-family);
+    font-weight: var(--medium-type-16-font-weight);
+    color: var(--primary-0);
+    font-size: var(--medium-type-16-font-size);
+    letter-spacing: var(--medium-type-16-letter-spacing);
+    line-height: var(--medium-type-16-line-height);
+    font-style: var(--medium-type-16-font-style);
+  }
+  
+  .car-buy .car {
+    position: absolute;
+    width: 350px;
+    height: 160px;
+    top: 200px;
+    left: 74px;
+  }
+  
+  .car-buy .overlap-wrapper {
+    position: absolute;
+    width: 148px;
+    height: 124px;
+    top: 577px;
+    left: 172px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: var(--primary-500);
+  }
+  
+  .car-buy .overlap {
+    position: relative;
+    width: 133px;
+    height: 108px;
+    top: 8px;
+    left: 8px;
+  }
+  
+  .car-buy .img {
+    position: absolute;
+    width: 132px;
+    height: 108px;
+    top: 0;
+    left: 0;
+  }
+  
+  .car-buy .car-2 {
+    position: absolute;
+    width: 130px;
+    height: 59px;
+    top: 31px;
+    left: 3px;
+  }
+  
+  .car-buy .view-2 {
+    position: absolute;
+    width: 148px;
+    height: 124px;
+    top: 577px;
+    left: 344px;
+    object-fit: cover;
+  }
+  
+  .car-buy .view-3 {
+    position: absolute;
+    width: 148px;
+    height: 124px;
+    top: 577px;
+    left: 516px;
+    object-fit: cover;
+  }
+  
+  .car-buy .detail-car {
+    position: absolute;
+    width: 667px;
+    height: 508px;
+    top: 192px;
+    left: 713px;
+    background-color: var(--primary-0);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .car-buy .car-name {
+    top: 25px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    left: 24px;
+  }
+  
+  .car-buy .text-wrapper-2 {
+    width: 287px;
+    position: relative;
+    height: 40px;
+    margin-top: -1.00px;
+    font-family: var(--bold-type-32-font-family);
+    font-weight: var(--bold-type-32-font-weight);
+    color: var(--secondary-500);
+    font-size: var(--bold-type-32-font-size);
+    letter-spacing: var(--bold-type-32-letter-spacing);
+    line-height: var(--bold-type-32-line-height);
+    white-space: nowrap;
+    font-style: var(--bold-type-32-font-style);
+  }
+  
+  .car-buy .california-has {
+    position: absolute;
+    width: 498px;
+    top: 96px;
+    left: 24px;
+    font-family: "Plus Jakarta Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--secondary-400);
+    font-size: 20px;
+    letter-spacing: -0.40px;
+    line-height: 40px;
+  }
+  
+  .car-buy .spesification {
+    gap: 44px;
+    top: 281px;
+    display: inline-flex;
+    align-items: flex-start;
+    position: absolute;
+    left: 24px;
+  }
+  
+  .car-buy .spesification-2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .car-buy .div-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .car-buy .text-wrapper-3 {
+    position: relative;
+    width: 92px;
+    height: 28px;
+    margin-top: -1.00px;
+    font-family: var(--regular-type-20-font-family);
+    font-weight: var(--regular-type-20-font-weight);
+    color: var(--secondary-300);
+    font-size: var(--regular-type-20-font-size);
+    letter-spacing: var(--regular-type-20-letter-spacing);
+    line-height: var(--regular-type-20-line-height);
+    white-space: nowrap;
+    font-style: var(--regular-type-20-font-style);
+  }
+  
+  .car-buy .text-wrapper-4 {
+    height: 28px;
+    position: relative;
+    width: 92px;
+    margin-top: -1.00px;
+    font-family: var(--semibold-type-20-font-family);
+    font-weight: var(--semibold-type-20-font-weight);
+    color: var(--secondary-400);
+    font-size: var(--semibold-type-20-font-size);
+    text-align: right;
+    letter-spacing: var(--semibold-type-20-letter-spacing);
+    line-height: var(--semibold-type-20-line-height);
+    white-space: nowrap;
+    font-style: var(--semibold-type-20-font-style);
+  }
+  
+  .car-buy .price {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: absolute;
+    top: 421px;
+    left: 24px;
+  }
+  
+  .car-buy .text-wrapper-5 {
+    position: relative;
+    width: 200px;
+    height: 32px;
+    margin-top: -1.00px;
+    font-family: "Plus Jakarta Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--secondary-500);
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .car-buy .text-wrapper-6 {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    font-family: "Plus Jakarta Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--secondary-300);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: line-through;
+  }
+  
+  .car-buy .button-rental {
+    display: flex;
+    width: 140px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0px 20px;
+    position: absolute;
+    top: 421px;
+    left: 503px;
+    background-color: var(--primary-500);
+    border-radius: 4px;
+  }
+  
+  .car-buy .text-wrapper-7 {
+    width: 76px;
+    height: 24px;
+    font-family: var(--bold-type-16-font-family);
+    font-weight: var(--bold-type-16-font-weight);
+    color: var(--primary-0);
+    font-size: var(--bold-type-16-font-size);
+    text-align: center;
+    letter-spacing: var(--bold-type-16-letter-spacing);
+    line-height: var(--bold-type-16-line-height);
+    position: relative;
+    white-space: nowrap;
+    font-style: var(--bold-type-16-font-style);
+  }
+  
+  .car-buy .vuesax-bold-heart {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 21px;
+    left: 619px;
+  }
+  
+  .car-buy .popular-car-rent {
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 1476px;
+    left: 46px;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  
+  .car-buy .popular {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1076px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .car-buy .div-wrapper {
+    display: flex;
+    width: 132px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0px 20px;
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  .car-buy .text-wrapper-8 {
+    position: relative;
+    width: 92px;
+    height: 24px;
+    font-family: "Plus Jakarta Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: var(--secondary-300);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .car-buy .view-4 {
+    display: flex;
+    width: 104px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0px 20px;
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  .car-buy .text-wrapper-9 {
+    position: relative;
+    width: 64px;
+    height: 24px;
+    font-family: "Plus Jakarta Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: var(--primary-500);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .car-buy .popular-car {
+    gap: 32px;
+    position: relative;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: flex-start;
+  }
+  
+  .car-buy .catalog {
+    position: relative;
+    width: 304px;
+    height: 388px;
+    background-color: var(--primary-0);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .car-buy .car-name-2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+  
+  .car-buy .text-wrapper-10 {
+    position: relative;
+    width: 173px;
+    margin-top: -1.00px;
+    font-family: var(--bold-type-20-font-family);
+    font-weight: var(--bold-type-20-font-weight);
+    color: var(--secondary-500);
+    font-size: var(--bold-type-20-font-size);
+    letter-spacing: var(--bold-type-20-letter-spacing);
+    line-height: var(--bold-type-20-line-height);
+    font-style: var(--bold-type-20-font-style);
+  }
+  
+  .car-buy .text-wrapper-11 {
+    position: relative;
+    width: 128px;
+    height: 20px;
+    font-family: var(--bold-type-14-font-family);
+    font-weight: var(--bold-type-14-font-weight);
+    color: var(--secondary-300);
+    font-size: var(--bold-type-14-font-size);
+    letter-spacing: var(--bold-type-14-letter-spacing);
+    line-height: var(--bold-type-14-line-height);
+    white-space: nowrap;
+    font-style: var(--bold-type-14-font-style);
+  }
+  
+  .car-buy .like {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    left: 256px;
+  }
+  
+  .car-buy .price-2 {
+    display: inline-flex;
+    flex-direction: column;
+    height: 44px;
+    align-items: flex-start;
+    gap: 4px;
+    position: absolute;
+    top: 320px;
+    left: 24px;
+  }
+  
+  .car-buy .text-wrapper-12 {
+    position: relative;
+    width: 116px;
+    height: 44px;
+    margin-top: -1.00px;
+    font-family: "Plus Jakarta Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--secondary-500);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .car-buy .button-rental-2 {
+    display: flex;
+    width: 116px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0px 20px;
+    position: absolute;
+    top: 320px;
+    left: 164px;
+    background-color: var(--primary-500);
+    border-radius: 4px;
+  }
+  
+  .car-buy .text-wrapper-13 {
+    position: relative;
+    width: 76px;
+    font-family: var(--semibold-type-16-font-family);
+    font-weight: var(--semibold-type-16-font-weight);
+    color: var(--primary-0);
+    font-size: var(--semibold-type-16-font-size);
+    text-align: center;
+    letter-spacing: var(--semibold-type-16-letter-spacing);
+    line-height: var(--semibold-type-16-line-height);
+    font-style: var(--semibold-type-16-font-style);
+  }
+  
+  .car-buy .spesification-3 {
+    gap: 16px;
+    top: 272px;
+    display: inline-flex;
+    align-items: flex-start;
+    position: absolute;
+    left: 24px;
+  }
+  
+  .car-buy .div-3 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .car-buy .img-2 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .car-buy .text-wrapper-14 {
+    position: relative;
+    width: 28px;
+    height: 24px;
+    margin-top: -1.00px;
+    font-family: var(--medium-type-14-font-family);
+    font-weight: var(--medium-type-14-font-weight);
+    color: var(--secondary-300);
+    font-size: var(--medium-type-14-font-size);
+    letter-spacing: var(--medium-type-14-letter-spacing);
+    line-height: var(--medium-type-14-line-height);
+    white-space: nowrap;
+    font-style: var(--medium-type-14-font-style);
+  }
+  
+  .car-buy .car-3 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .car-buy .overlap-group-2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    background-image: url(./img/circle-4.svg);
+    background-size: 100% 100%;
+  }
+  
+  .car-buy .circle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    background-color: var(--primary-0);
+    border-radius: 20px;
+  }
+  
+  .car-buy .circle-2 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 4px;
+  }
+  
+  .car-buy .circle-3 {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 6px;
+    left: 6px;
+    background-color: var(--primary-0);
+    border-radius: 20px;
+  }
+  
+  .car-buy .rectangle {
+    width: 2px;
+    height: 4px;
+    top: 15px;
+    left: 9px;
+    position: absolute;
+    background-color: var(--secondary-300);
+  }
+  
+  .car-buy .rectangle-2 {
+    width: 4px;
+    height: 2px;
+    top: 9px;
+    left: 15px;
+    position: absolute;
+    background-color: var(--secondary-300);
+  }
+  
+  .car-buy .rectangle-3 {
+    width: 4px;
+    height: 2px;
+    top: 9px;
+    left: 1px;
+    position: absolute;
+    background-color: var(--secondary-300);
+  }
+  
+  .car-buy .text-wrapper-15 {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    margin-top: -1.00px;
+    font-family: "Plus Jakarta Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--secondary-300);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .car-buy .text-wrapper-16 {
+    position: relative;
+    width: 60px;
+    height: 24px;
+    margin-top: -1.00px;
+    font-family: "Plus Jakarta Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--secondary-300);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .car-buy .overlap-2 {
+    position: absolute;
+    width: 304px;
+    height: 123px;
+    top: 112px;
+    left: 0;
+  }
+  
+  .car-buy .shadow {
+    position: absolute;
+    width: 304px;
+    height: 68px;
+    top: 55px;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgb(255, 255, 255) 100%
+    );
+  }
+  
+  .car-buy .car-4 {
+    position: absolute;
+    width: 232px;
+    height: 105px;
+    top: 0;
+    left: 36px;
+  }
+  
+  .car-buy .overlap-group-3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    background-image: url(./img/circle-4-3.svg);
+    background-size: 100% 100%;
+  }
+  
+  .car-buy .overlap-group-4 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    background-image: url(./img/circle-4-4.svg);
+    background-size: 100% 100%;
+  }
+  
+  .car-buy .overlap-group-5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    background-image: url(./img/circle-4-2.svg);
+    background-size: 100% 100%;
+  }
+  
+  .car-buy .detail-car-big {
+    position: absolute;
+    width: 1348px;
+    height: 686px;
+    top: 767px;
+    left: 46px;
+    background-color: var(--primary-0);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .car-buy .car-name-3 {
+    top: 24px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    left: 24px;
+  }
+  
+  .car-buy .text-wrapper-17 {
+    width: 567px;
+    position: relative;
+    height: 40px;
+    margin-top: -1.00px;
+    font-family: var(--bold-type-32-font-family);
+    font-weight: var(--bold-type-32-font-weight);
+    color: var(--secondary-500);
+    font-size: var(--bold-type-32-font-size);
+    letter-spacing: var(--bold-type-32-letter-spacing);
+    line-height: var(--bold-type-32-line-height);
+    white-space: nowrap;
+    font-style: var(--bold-type-32-font-style);
+  }
+  
+  .car-buy .p {
+    position: absolute;
+    width: 498px;
+    top: 95px;
+    left: 24px;
+    font-family: "Plus Jakarta Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--secondary-400);
+    font-size: 20px;
+    letter-spacing: -0.40px;
+    line-height: 40px;
+  }
+  
+  .car-buy .gasoline-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 490px;
+    left: 24px;
+  }
+  
+  .car-buy .capacity {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 302px;
+    left: 24px;
+  }
+  
+  .car-buy .text-wrapper-18 {
+    position: relative;
+    width: 92px;
+    height: 34px;
+    margin-top: -1.00px;
+    font-family: var(--regular-type-20-font-family);
+    font-weight: var(--regular-type-20-font-weight);
+    color: var(--secondary-300);
+    font-size: var(--regular-type-20-font-size);
+    letter-spacing: var(--regular-type-20-letter-spacing);
+    line-height: var(--regular-type-20-line-height);
+    white-space: nowrap;
+    font-style: var(--regular-type-20-font-style);
+  }
+  
+  .car-buy .text-wrapper-19 {
+    height: 34px;
+    position: relative;
+    width: 92px;
+    margin-top: -1.00px;
+    font-family: var(--semibold-type-20-font-family);
+    font-weight: var(--semibold-type-20-font-weight);
+    color: var(--secondary-400);
+    font-size: var(--semibold-type-20-font-size);
+    text-align: right;
+    letter-spacing: var(--semibold-type-20-letter-spacing);
+    line-height: var(--semibold-type-20-line-height);
+    white-space: nowrap;
+    font-style: var(--semibold-type-20-font-style);
+  }
+  
+  .car-buy .capacity-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 255px;
+    left: 24px;
+  }
+  
+  .car-buy .capacity-3 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 443px;
+    left: 24px;
+  }
+  
+  .car-buy .steering {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 396px;
+    left: 24px;
+  }
+  
+  .car-buy .typr {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+    top: 349px;
+    left: 24px;
+  }
+  
+  .car-buy .price-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: absolute;
+    top: 622px;
+    left: 32px;
+  }
+  
+  .car-buy .text-wrapper-20 {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    margin-top: -1.00px;
+    font-family: "Plus Jakarta Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--secondary-300);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-decoration: line-through;
+  }
+  
+  .car-buy .text-wrapper-21 {
+    position: absolute;
+    width: 200px;
+    height: 32px;
+    top: 577px;
+    left: 32px;
+    font-family: "Plus Jakarta Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--secondary-500);
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .car-buy .car-5 {
+    position: absolute;
+    width: 543px;
+    height: 273px;
+    top: 239px;
+    left: 714px;
+  }
+  
+  .car-buy .nav-bar-top {
+    position: absolute;
+    width: 1440px;
+    height: 124px;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-0);
+    border: 1px solid;
+    border-color: #c3d4e966;
+  }
+  
+  .car-buy .profil-notification {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: absolute;
+    top: 40px;
+    left: 1122px;
+  }
+  
+  .car-buy .overlap-group-wrapper {
+    position: relative;
+    width: 44px;
+    height: 44px;
+  }
+  
+  .car-buy .overlap-group-6 {
+    position: relative;
+    height: 44px;
+    border-radius: 90px;
+  }
+  
+  .car-buy .vuesax-bold-heart-2 {
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    top: 6px;
+    left: 8px;
+    background-image: url(./img/heart.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .car-buy .button {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 0;
+    left: 0;
+    border-radius: 90px;
+    border: 1px solid;
+    border-color: #c3d4e966;
+    opacity: 0.8;
+  }
+  
+  .car-buy .img-3 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .car-buy .notif {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 2px;
+    left: 31px;
+    background-color: #ff4423;
+    border-radius: 5.5px;
+  }
+  
+  .car-buy .profil {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    background-image: url(./img/image-2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .car-buy .logo {
+    position: absolute;
+    width: 190px;
+    height: 44px;
+    top: 35px;
+    left: 29px;
+    font-family: var(--bold-type-32-font-family);
+    font-weight: var(--bold-type-32-font-weight);
+    color: var(--primary-500);
+    font-size: var(--bold-type-32-font-size);
+    letter-spacing: var(--bold-type-32-letter-spacing);
+    line-height: var(--bold-type-32-line-height);
+    white-space: nowrap;
+    font-style: var(--bold-type-32-font-style);
+  }
+  
+  .car-buy .search {
+    position: absolute;
+    width: 454px;
+    height: 24px;
+    top: 50px;
+    left: 292px;
+  }
+  
+  .car-buy .search-something {
+    position: absolute;
+    width: 149px;
+    height: 20px;
+    top: 2px;
+    left: 44px;
+    font-family: var(--medium-type-14-font-family);
+    font-weight: var(--medium-type-14-font-weight);
+    color: var(--secondary-400);
+    font-size: var(--medium-type-14-font-size);
+    text-align: justify;
+    letter-spacing: var(--medium-type-14-letter-spacing);
+    line-height: var(--medium-type-14-line-height);
+    white-space: nowrap;
+    font-style: var(--medium-type-14-font-style);
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .car-buy .search-normal {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+  }
+  
+  .car-buy .vuesax-linear-filter {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 428px;
+  }
+  
