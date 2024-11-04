@@ -1,0 +1,97 @@
+
+    .catalog-container {
+      border-radius: 10px;
+      background: var(--Primary-0, #fff);
+      max-width: 304px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
+    .highlight-bar {
+      border-radius: 20px;
+      background: var(--Primary-300, #85a8f8);
+      width: 116px;
+      height: 16px;
+    }
+    
+    .secondary-bar {
+      border-radius: 20px;
+      background-color: rgba(239, 243, 253, 1);
+      width: 116px;
+      height: 16px;
+      margin-top: 8px;
+    }
+    
+    .content-row {
+      display: flex;
+      margin-top: 40px;
+      align-items: flex-end;
+      gap: 15px;
+    }
+    
+    .small-bar {
+      border-radius: 20px;
+      background-color: rgba(239, 243, 253, 1);
+      width: 68px;
+      height: 16px;
+      margin-top: 154px;
+    }
+    
+    .image-container {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .product-image {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 90px;
+    }
+    
+    .centered-bar {
+      border-radius: 20px;
+      background-color: rgba(239, 243, 253, 1);
+      align-self: center;
+      width: 68px;
+      height: 16px;
+      margin-top: 64px;
+    }
+    
+    .bottom-section {
+      display: flex;
+      margin-top: 36px;
+      align-items: flex-start;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    
+    .status-bars {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .add-new-button {
+      position: relative;
+      border-radius: 4px;
+      aspect-ratio: 2.636;
+      margin-top: 10px;
+      color: #fff;
+      text-align: center;
+      letter-spacing: -0.32px;
+      padding: 16px 25px;
+      font: 600 16px Plus Jakarta Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    }
+    
+    .button-background {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  
