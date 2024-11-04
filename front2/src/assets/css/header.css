@@ -1,0 +1,78 @@
+.nav-bar-top {
+    background-color: var(--primary-0);
+    border: 1px solid;
+    border-color: #c3d4e966;
+    height: 124px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .nav-bar-top .profil-notification {
+    align-items: flex-start;
+    display: flex;
+    gap: 20px;
+    left: 1122px;
+    position: absolute;
+    top: 40px;
+    width: 300px;
+  }
+  
+  .nav-bar-top .overlap-group-wrapper {
+    height: 44px;
+    position: relative;
+    width: 44px;
+  }
+  
+  .nav-bar-top .overlap-group {
+    border-radius: 90px;
+    height: 44px;
+    position: relative;
+  }
+  
+  .nav-bar-top .button {
+    border: 1px solid;
+    border-color: #c3d4e966;
+    border-radius: 90px;
+    height: 44px;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 44px;
+  }
+  
+  .nav-bar-top .icon-instance-node {
+    height: 24px !important;
+    left: 10px !important;
+    position: absolute !important;
+    top: 10px !important;
+    width: 24px !important;
+  }
+  
+  .nav-bar-top .notif {
+    background-color: #ff4423;
+    border-radius: 5.5px;
+    height: 11px;
+    left: 31px;
+    position: absolute;
+    top: 2px;
+    width: 11px;
+  }
+  
+  .nav-bar-top .profil {
+    /* background-image: url(./image.png); */
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 44px;
+    position: relative;
+    width: 44px;
+  }
+  
+  .nav-bar-top .logo {
+    height: 31px;
+    left: 62px;
+    position: absolute;
+    top: 51px;
+    width: 93px;
+  }
+  
