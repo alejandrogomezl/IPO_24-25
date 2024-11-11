@@ -1,15 +1,20 @@
 // Home.jsx
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import VehicleList from '../components/VehicleList';
 import '../assets/css/home.css';
 
 export default function Home() {
+  const navigate =useNavigate();
   // Estado para manejar cuántos vehículos se muestran en "Recommendation Cars"
   const [recommendationLimit, setRecommendationLimit] = useState(10);
 
   // Función para manejar el evento "See More"
   const handleSeeMore = () => {
     setRecommendationLimit(prevLimit => prevLimit + 10); // Incrementa el límite en 10 cada vez que se pulsa "See More"
+  };
+  const handleContactMechanic = () => {
+    navigate('/inquiry'); // Navegar a la página de Inquiry
   };
 
   return (
@@ -19,7 +24,7 @@ export default function Home() {
           <h2>Having Any Issue With Your Car?</h2>
         </div>
         <button className="invoice-button">My Invoices</button>
-        <button className="mechanic-button">Contact Mechanic</button>
+        <button className="mechanic-button" onClick={handleContactMechanic}>Contact Mechanic</button>
         <img className="hero-image" src="/assets/images/koenigsegg.png" alt="Car Hero" />
       </header>
 
