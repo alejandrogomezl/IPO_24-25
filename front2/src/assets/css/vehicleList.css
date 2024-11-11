@@ -1,0 +1,20 @@
+/* assets/styles/vehicleList.css */
+.vehicle-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Múltiples columnas flexibles */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espaciado alrededor del contenedor */
+  }
+  
+  .catalog {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .catalog:hover {
+    transform: scale(1.05);
+  }
+  
