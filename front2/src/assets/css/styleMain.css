@@ -1,9 +1,4 @@
-
-
-
-/*******************************************************/
-
-.mechanic-page {
+  .mechanic-page{
     background-color: #f6f7f9;
     display: flex;
     flex-direction: row;
@@ -11,14 +6,14 @@
     width: 100%;
   }
   
-  .mechanic-page .div {
+   .div {
     background-color: #f6f7f9;
     width: 1440px;
     height: 2037px;
     position: relative;
   }
   
-  .mechanic-page .overlap {
+   .overlap {
     position: absolute;
     width: 1328px;
     height: 1359px;
@@ -26,7 +21,7 @@
     left: 64px;
   }
   
-  .mechanic-page .catalogue-car {
+   .catalogue-car {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -36,7 +31,7 @@
     left: 0;
   }
   
-  .mechanic-page .div-2 {
+   .div-2 {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -45,7 +40,7 @@
     flex: 0 0 auto;
   }
   
-  .mechanic-page .popular {
+   .popular {
     display: inline-flex;
     align-items: flex-start;
     gap: 1076px;
@@ -53,7 +48,7 @@
     flex: 0 0 auto;
   }
   
-  .mechanic-page .div-wrapper {
+   .div-wrapper {
     display: flex;
     width: 132px;
     height: 44px;
@@ -65,7 +60,7 @@
     border-radius: 4px;
   }
   
-  .mechanic-page .text-wrapper {
+   .text-wrapper {
     position: relative;
     width: 92px;
     height: 24px;
@@ -78,14 +73,14 @@
     line-height: normal;
   }
   
-  .mechanic-page .view {
+   .view {
     position: relative;
     width: 104px;
     height: 44px;
     border-radius: 4px;
   }
   
-  .mechanic-page .div-3 {
+   .div-3 {
     display: inline-flex;
     align-items: flex-start;
     gap: 32px;
@@ -93,7 +88,7 @@
     flex: 0 0 auto;
   }
   
-  .mechanic-page .catalog {
+   .catalog {
     position: relative;
     width: 304px;
     height: 388px;
@@ -102,7 +97,7 @@
     overflow: hidden;
   }
   
-  .mechanic-page .overlap-group {
+   .overlap-group {
     position: absolute;
     width: 116px;
     height: 44px;
@@ -112,7 +107,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .text-wrapper-2 {
+   .text-wrapper-2 {
     width: 69px;
     height: 24px;
     top: 9px;
@@ -129,7 +124,7 @@
     font-style: var(--semibold-type-16-font-style);
   }
   
-  .mechanic-page .price {
+   .price {
     position: absolute;
     width: 116px;
     height: 40px;
@@ -137,7 +132,7 @@
     left: 24px;
   }
   
-  .mechanic-page .rectangle {
+   .rectangle {
     position: absolute;
     width: 116px;
     height: 16px;
@@ -147,7 +142,7 @@
     border-radius: 20px;
   }
   
-  .mechanic-page .rectangle-2 {
+   .rectangle-2 {
     width: 116px;
     top: 24px;
     left: 0;
@@ -157,7 +152,7 @@
     border-radius: 20px;
   }
   
-  .mechanic-page .spesification {
+   .spesification {
     position: absolute;
     width: 256px;
     height: 16px;
@@ -165,7 +160,7 @@
     left: 24px;
   }
   
-  .mechanic-page .rectangle-3 {
+   .rectangle-3 {
     width: 68px;
     top: 0;
     left: 0;
@@ -175,7 +170,7 @@
     border-radius: 20px;
   }
   
-  .mechanic-page .rectangle-4 {
+   .rectangle-4 {
     width: 68px;
     top: 0;
     left: 94px;
@@ -185,7 +180,7 @@
     border-radius: 20px;
   }
   
-  .mechanic-page .rectangle-5 {
+   .rectangle-5 {
     width: 68px;
     top: 0;
     left: 188px;
@@ -195,7 +190,7 @@
     border-radius: 20px;
   }
   
-  .mechanic-page .car-name {
+   .car-name {
     position: absolute;
     width: 116px;
     height: 40px;
@@ -203,7 +198,7 @@
     left: 24px;
   }
   
-  .mechanic-page .add-square {
+   .add-square {
     width: 90px;
     height: 90px;
     top: 104px;
@@ -211,7 +206,7 @@
     position: absolute;
   }
   
-  .mechanic-page .catalog-2 {
+   .catalog-2 {
     position: relative;
     width: 304px;
     height: 388px;
@@ -220,7 +215,7 @@
     overflow: hidden;
   }
   
-  .mechanic-page .car-name-2 {
+   .car-name-2 {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -230,7 +225,7 @@
     left: 24px;
   }
   
-  .mechanic-page .text-wrapper-3 {
+   .text-wrapper-3 {
     position: relative;
     width: 173px;
     margin-top: -1.00px;
@@ -243,7 +238,7 @@
     font-style: var(--bold-type-20-font-style);
   }
   
-  .mechanic-page .text-wrapper-4 {
+   .text-wrapper-4 {
     position: relative;
     width: 128px;
     height: 20px;
@@ -257,7 +252,7 @@
     font-style: var(--bold-type-14-font-style);
   }
   
-  .mechanic-page .like {
+   .like {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -265,7 +260,7 @@
     left: 256px;
   }
   
-  .mechanic-page .price-2 {
+   .price-2 {
     display: inline-flex;
     flex-direction: column;
     height: 44px;
@@ -276,7 +271,7 @@
     left: 24px;
   }
   
-  .mechanic-page .text-wrapper-5 {
+   .text-wrapper-5 {
     position: relative;
     width: 116px;
     height: 44px;
@@ -289,7 +284,7 @@
     line-height: normal;
   }
   
-  .mechanic-page .button-rental {
+   .button-rental {
     width: 116px;
     height: 44px;
     top: 320px;
@@ -304,7 +299,7 @@
     border-radius: 4px;
   }
   
-  .mechanic-page .text-wrapper-6 {
+   .text-wrapper-6 {
     position: relative;
     width: 76px;
     font-family: var(--semibold-type-16-font-family);
@@ -317,7 +312,7 @@
     font-style: var(--semibold-type-16-font-style);
   }
   
-  .mechanic-page .spesification-2 {
+   .spesification-2 {
     display: inline-flex;
     align-items: flex-start;
     gap: 16px;
@@ -326,7 +321,7 @@
     left: 24px;
   }
   
-  .mechanic-page .div-4 {
+   .div-4 {
     display: inline-flex;
     align-items: flex-start;
     gap: 6px;
@@ -334,13 +329,13 @@
     flex: 0 0 auto;
   }
   
-  .mechanic-page .img {
+   .img {
     position: relative;
     width: 24px;
     height: 24px;
   }
   
-  .mechanic-page .text-wrapper-7 {
+   .text-wrapper-7 {
     position: relative;
     width: 28px;
     height: 24px;
@@ -355,7 +350,7 @@
     font-style: var(--medium-type-14-font-style);
   }
   
-  .mechanic-page .car {
+   .car {
     display: inline-flex;
     align-items: flex-start;
     gap: 4px;
@@ -363,7 +358,7 @@
     flex: 0 0 auto;
   }
   
-  .mechanic-page .overlap-group-2 {
+   .overlap-group-2 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -373,7 +368,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .circle {
+   .circle {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -383,7 +378,7 @@
     border-radius: 20px;
   }
   
-  .mechanic-page .circle-2 {
+   .circle-2 {
     position: absolute;
     width: 12px;
     height: 12px;
@@ -391,7 +386,7 @@
     left: 4px;
   }
   
-  .mechanic-page .circle-3 {
+   .circle-3 {
     position: absolute;
     width: 8px;
     height: 8px;
@@ -401,7 +396,7 @@
     border-radius: 20px;
   }
   
-  .mechanic-page .rectangle-6 {
+   .rectangle-6 {
     position: absolute;
     width: 2px;
     height: 4px;
@@ -410,7 +405,7 @@
     background-color: var(--secondary-300);
   }
   
-  .mechanic-page .rectangle-7 {
+   .rectangle-7 {
     position: absolute;
     width: 4px;
     height: 2px;
@@ -419,7 +414,7 @@
     background-color: var(--secondary-300);
   }
   
-  .mechanic-page .rectangle-8 {
+   .rectangle-8 {
     position: absolute;
     width: 4px;
     height: 2px;
@@ -428,7 +423,7 @@
     background-color: var(--secondary-300);
   }
   
-  .mechanic-page .text-wrapper-8 {
+   .text-wrapper-8 {
     position: relative;
     width: 48px;
     height: 24px;
@@ -441,7 +436,7 @@
     line-height: normal;
   }
   
-  .mechanic-page .text-wrapper-9 {
+   .text-wrapper-9 {
     position: relative;
     width: 60px;
     height: 24px;
@@ -454,7 +449,7 @@
     line-height: normal;
   }
   
-  .mechanic-page .overlap-2 {
+   .overlap-2 {
     position: absolute;
     width: 304px;
     height: 123px;
@@ -462,7 +457,7 @@
     left: 0;
   }
   
-  .mechanic-page .shadow {
+   .shadow {
     position: absolute;
     width: 304px;
     height: 68px;
@@ -475,7 +470,7 @@
     );
   }
   
-  .mechanic-page .car-2 {
+   .car-2 {
     position: absolute;
     width: 232px;
     height: 105px;
@@ -483,7 +478,7 @@
     left: 36px;
   }
   
-  .mechanic-page .overlap-group-3 {
+   .overlap-group-3 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -493,7 +488,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-4 {
+   .overlap-group-4 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -503,7 +498,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .recomendation {
+   .recomendation {
     display: flex;
     width: 196px;
     height: 44px;
@@ -515,7 +510,7 @@
     border-radius: 4px;
   }
   
-  .mechanic-page .text-wrapper-10 {
+   .text-wrapper-10 {
     position: relative;
     width: 156px;
     height: 24px;
@@ -528,7 +523,7 @@
     line-height: normal;
   }
   
-  .mechanic-page .recomendation-car {
+   .recomendation-car {
     gap: 32px;
     position: relative;
     flex: 0 0 auto;
@@ -537,7 +532,7 @@
     align-items: flex-start;
   }
   
-  .mechanic-page .overlap-group-5 {
+   .overlap-group-5 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -547,7 +542,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-6 {
+   .overlap-group-6 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -557,7 +552,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-7 {
+   .overlap-group-7 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -567,7 +562,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-8 {
+   .overlap-group-8 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -577,7 +572,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-9 {
+   .overlap-group-9 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -587,7 +582,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-10 {
+   .overlap-group-10 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -597,7 +592,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-11 {
+   .overlap-group-11 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -607,7 +602,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-12 {
+   .overlap-group-12 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -617,7 +612,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .recomendation-car-2 {
+   .recomendation-car-2 {
     gap: 20px;
     position: absolute;
     top: 487px;
@@ -627,7 +622,7 @@
     align-items: flex-start;
   }
   
-  .mechanic-page .overlap-group-13 {
+   .overlap-group-13 {
     position: absolute;
     width: 116px;
     height: 44px;
@@ -637,7 +632,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-14 {
+   .overlap-group-14 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -647,7 +642,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-15 {
+   .overlap-group-15 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -657,7 +652,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-16 {
+   .overlap-group-16 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -667,7 +662,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-17 {
+   .overlap-group-17 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -677,7 +672,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-18 {
+   .overlap-group-18 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -687,7 +682,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-19 {
+   .overlap-group-19 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -697,7 +692,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-group-20 {
+   .overlap-group-20 {
     position: relative;
     width: 20px;
     height: 20px;
@@ -707,7 +702,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .group {
+   .group {
     top: 487px;
     position: absolute;
     width: 217px;
@@ -715,12 +710,12 @@
     left: 1095px;
   }
   
-  .mechanic-page .overlap-3 {
+   .overlap-3 {
     position: relative;
     height: 50px;
   }
   
-  .mechanic-page .overlap-4 {
+   .overlap-4 {
     position: absolute;
     width: 217px;
     height: 50px;
@@ -728,7 +723,7 @@
     left: 0;
   }
   
-  .mechanic-page .arrow-left {
+   .arrow-left {
     position: absolute;
     width: 50px;
     height: 217px;
@@ -741,7 +736,7 @@
     transform: rotate(-90.00deg);
   }
   
-  .mechanic-page .property-linear {
+   .property-linear {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -750,7 +745,7 @@
     transform: rotate(90.00deg);
   }
   
-  .mechanic-page .flecha-arriba {
+   .flecha-arriba {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -760,7 +755,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .ajustes {
+   .ajustes {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -770,7 +765,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .candado {
+   .candado {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -780,7 +775,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .overlap-wrapper {
+   .overlap-wrapper {
     top: 0;
     position: absolute;
     width: 217px;
@@ -788,7 +783,7 @@
     left: 1095px;
   }
   
-  .mechanic-page .property-linear-2 {
+   .property-linear-2 {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -797,7 +792,7 @@
     transform: rotate(90.00deg);
   }
   
-  .mechanic-page .flecha-arriba-2 {
+   .flecha-arriba-2 {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -807,7 +802,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .show-more {
+   .show-more {
     display: inline-flex;
     align-items: center;
     gap: 438px;
@@ -816,7 +811,7 @@
     left: 642px;
   }
   
-  .mechanic-page .show-more-2 {
+   .show-more-2 {
     display: flex;
     width: 156px;
     height: 44px;
@@ -829,7 +824,7 @@
     border-radius: 4px;
   }
   
-  .mechanic-page .text-wrapper-11 {
+   .text-wrapper-11 {
     position: relative;
     width: 116px;
     height: 24px;
@@ -844,7 +839,7 @@
     font-style: var(--semibold-type-16-font-style);
   }
   
-  .mechanic-page .text-wrapper-12 {
+   .text-wrapper-12 {
     position: relative;
     width: 140px;
     height: 24px;
@@ -859,7 +854,7 @@
     font-style: var(--medium-type-14-font-style);
   }
   
-  .mechanic-page .overlap-5 {
+   .overlap-5 {
     position: absolute;
     width: 1312px;
     height: 340px;
@@ -868,7 +863,7 @@
     border-radius: 10px;
   }
   
-  .mechanic-page .ads {
+   .ads {
     position: absolute;
     width: 1312px;
     height: 340px;
@@ -879,7 +874,7 @@
     overflow: hidden;
   }
   
-  .mechanic-page .ads-wrapper {
+   .ads-wrapper {
     position: absolute;
     width: 728px;
     height: 340px;
@@ -889,7 +884,7 @@
     background-size: 100% 100%;
   }
   
-  .mechanic-page .title-wrapper {
+   .title-wrapper {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
@@ -899,7 +894,7 @@
     left: 24px;
   }
   
-  .mechanic-page .title {
+   .title {
     display: flex;
     flex-direction: column;
     width: 639px;
@@ -909,7 +904,7 @@
     position: relative;
   }
   
-  .mechanic-page .welcome-back-admin {
+   .welcome-back-admin {
     position: relative;
     align-self: stretch;
     margin-top: -1.00px;
@@ -921,7 +916,7 @@
     line-height: 54px;
   }
   
-  .mechanic-page .p {
+   .p {
     position: relative;
     width: 376px;
     margin-bottom: -4.00px;
@@ -933,7 +928,7 @@
     line-height: 36px;
   }
   
-  .mechanic-page .profil {
+   .profil {
     position: absolute;
     width: 126px;
     height: 130px;
@@ -944,7 +939,7 @@
     background-position: 50% 50%;
   }
   
-  .mechanic-page .button-rent {
+   .button-rent {
     width: 189px;
     height: 73px;
     top: 246px;
@@ -959,7 +954,7 @@
     border-radius: 4px;
   }
   
-  .mechanic-page .text-wrapper-13 {
+   .text-wrapper-13 {
     position: relative;
     width: 132px;
     height: 37px;
@@ -973,7 +968,7 @@
     white-space: nowrap;
   }
   
-  .mechanic-page .notif {
+   .notif {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -983,7 +978,7 @@
     border-radius: 7.5px;
   }
   
-  .mechanic-page .nav-bar-top {
+   .nav-bar-top {
     position: absolute;
     width: 1440px;
     height: 124px;
@@ -994,7 +989,7 @@
     border-color: #c3d4e966;
   }
   
-  .mechanic-page .profil-notification {
+   .profil-notification {
     display: inline-flex;
     align-items: flex-start;
     gap: 20px;
@@ -1003,19 +998,19 @@
     left: 1122px;
   }
   
-  .mechanic-page .overlap-group-wrapper {
+   .overlap-group-wrapper {
     position: relative;
     width: 44px;
     height: 44px;
   }
   
-  .mechanic-page .overlap-group-21 {
+   .overlap-group-21 {
     position: relative;
     height: 44px;
     border-radius: 90px;
   }
   
-  .mechanic-page .vuesax-bold-heart {
+   .vuesax-bold-heart {
     position: absolute;
     width: 27px;
     height: 34px;
@@ -1026,7 +1021,7 @@
     background-position: 50% 50%;
   }
   
-  .mechanic-page .button {
+   .button {
     position: absolute;
     width: 44px;
     height: 44px;
@@ -1038,7 +1033,7 @@
     opacity: 0.8;
   }
   
-  .mechanic-page .img-2 {
+   .img-2 {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -1046,7 +1041,7 @@
     left: 10px;
   }
   
-  .mechanic-page .notif-2 {
+   .notif-2 {
     position: absolute;
     width: 11px;
     height: 11px;
@@ -1056,7 +1051,7 @@
     border-radius: 5.5px;
   }
   
-  .mechanic-page .profil-2 {
+   .profil-2 {
     position: relative;
     width: 44px;
     height: 44px;
@@ -1065,7 +1060,7 @@
     background-position: 50% 50%;
   }
   
-  .mechanic-page .logo {
+   .logo {
     position: absolute;
     width: 190px;
     height: 44px;
@@ -1081,7 +1076,7 @@
     font-style: var(--bold-type-32-font-style);
   }
   
-  .mechanic-page .search {
+   .search {
     position: absolute;
     width: 494px;
     height: 44px;
@@ -1089,7 +1084,7 @@
     left: 272px;
   }
   
-  .mechanic-page .overlap-6 {
+   .overlap-6 {
     position: relative;
     width: 492px;
     height: 44px;
@@ -1099,7 +1094,7 @@
     border-color: #c3d4e966;
   }
   
-  .mechanic-page .search-something {
+   .search-something {
     position: absolute;
     width: 149px;
     height: 20px;
@@ -1119,7 +1114,7 @@
     padding: 0;
   }
   
-  .mechanic-page .search-normal {
+   .search-normal {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -1127,7 +1122,7 @@
     left: 19px;
   }
   
-  .mechanic-page .vuesax-linear-filter {
+   .vuesax-linear-filter {
     position: absolute;
     width: 24px;
     height: 24px;

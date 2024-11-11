@@ -1,17 +1,17 @@
 // VehicleList.jsx
 import React, { useEffect, useState } from 'react';
 import CarCard from './carCard';
-import '../assets/css/vehicleList.css';  // Asegúrate de agregar un archivo CSS específico para la lista
 
-function VehicleList() {
+function VehicleList({ start = 0, limit }) {
   const [vehicles, setVehicles] = useState([]);
 
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/vehicles');
+        const response = await fetch('http://localhost:3000/api/vehicles'); // Asegúrate de que el backend está corriendo en esta URL
         const data = await response.json();
         setVehicles(data);
+        console.log(data);
       } catch (error) {
         console.error('Error al obtener los vehículos:', error);
       }
@@ -20,9 +20,12 @@ function VehicleList() {
     fetchVehicles();
   }, []);
 
+  // Filtrar los vehículos según los parámetros start y limit
+  const displayedVehicles = vehicles.slice(start, limit ? start + limit : vehicles.length);
+
   return (
     <div className="vehicle-list">
-      {vehicles.map(vehicle => (
+      {displayedVehicles.map(vehicle => (
         <CarCard key={vehicle._id} vehicle={vehicle} />
       ))}
     </div>
