@@ -41,7 +41,7 @@
   }
   
   .hero-section {
-    background-color: #0056b3; /* Fondo azul oscuro */
+    background-color: #2f94ff; /* Fondo azul oscuro */
     border-radius: 15px;
     padding: 30px;
     display: flex;
@@ -69,7 +69,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #003d99; /* Azul más oscuro */
+    background-color: #0353a8; /* Azul más oscuro */
     color: #fff;
     border: none;
     padding: 40px 76px; /* Botón más grande */
@@ -90,7 +90,7 @@
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: #003d99; /* Azul más oscuro */
+    background-color:#0353a8; /* Azul más oscuro */
     color: #fff;
     border: none;
     padding: 40px 50px; /* Botón más grande */
