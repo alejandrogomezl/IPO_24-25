@@ -33,7 +33,7 @@ function CarCard({ vehicle }) {
       <div className="price-and-button">
         <div className="price">{vehicle.price} €</div>
         <Link to={`/vehicles/${vehicle._id}`}>
-          <button className="button-rental">Rent</button>
+          <button className="button-rental">Buy</button>
         </Link>
       </div>
     </div>
