@@ -1,0 +1,67 @@
+/* inquiry.css */
+
+.inquiry-container {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px; /* Ancho máximo de la página */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    font-family: Arial, sans-serif;
+  }
+  
+  .inquiry-container h2 {
+    font-size: 36px; /* Aumentar el tamaño de la letra */
+    margin-top: 10px; /* Reducir el espacio entre el título y la parte superior del contenedor */
+    margin-bottom: 20px;
+  }
+  
+  .inquiry-container p {
+    font-size: 16px; /* Tamaño de letra para la descripción, más pequeño */
+    margin-bottom: 15px;
+  }
+  
+  .inquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reducir el espacio entre los elementos */
+  }
+  
+  .inquiry-options label {
+    font-size: 18px; /* Reducir un poco el tamaño de la letra */
+    display: flex;
+    align-items: center;
+  }
+  
+  .inquiry-options input {
+    width: 20px; /* Reducir el tamaño del checkbox */
+    height: 20px; /* Reducir el tamaño del checkbox */
+    margin-right: 10px;
+  }
+  
+  .inquiry-textarea {
+    padding: 10px; /* Espaciado interno adecuado */
+    font-size: 15px; /* Reducir un poco el tamaño de la letra */
+    width: 100%;
+    height: 120px; /* Reducir la altura del área de texto */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none; /* Desactivar el redimensionado */
+  }
+  
+  .inquiry-submit-button {
+    width: 130px; /* Reducir un poco el tamaño del botón */
+    padding: 10px; /* Reducir el espaciado interno del botón */
+    font-size: 16px; /* Reducir el tamaño de la letra */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .inquiry-submit-button:hover {
+    background-color: #0056b3;
+  }
+  
