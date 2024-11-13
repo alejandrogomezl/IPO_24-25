@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSyncAlt, faExpandAlt } from '@fortawesome/free-solid-svg-icons';
-
-
-import photo from '../assets/img/koennisegg.png';
+import '@google/model-viewer';
 
 function CarView() {
+  // Referencia al model-viewer para controlar el modo de pantalla completa
+  const modelViewerRef = useRef(null);
+
+  // Función para activar el modo de pantalla completa
+  const handleFullscreen = () => {
+    if (modelViewerRef.current) {
+      modelViewerRef.current.requestFullscreen();
+    }
+  };
+
+  // Función para reiniciar la rotación del modelo
+  const handleRotate = () => {
+    if (modelViewerRef.current) {
+      modelViewerRef.current.rotation = '0deg'; // Resetear la rotación
+    }
+  };
+
   return (
     <section className="flex flex-col items-center px-4 py-8 sm:px-8 lg:px-16 xl:px-24 bg-gray-50">
       <div className="flex flex-col sm:flex-row max-w-6xl w-full bg-white rounded-xl shadow-md overflow-hidden p-8">
@@ -56,20 +71,29 @@ function CarView() {
           <div className="flex items-center justify-between w-full">
             <h3 className="text-2xl font-bold text-gray-900">3D Model</h3>
             <div className="flex space-x-2">
-            <button className="text-gray-400 hover:text-gray-600 bg-white bg-opacity-70 rounded-full p-2">
-                <FontAwesomeIcon icon={faSyncAlt} className="h-5 w-5" /> {/* Icono de rotación */}
-            </button>
-            <button className="text-gray-400 hover:text-gray-600 bg-white bg-opacity-70 rounded-full p-2">
-                <FontAwesomeIcon icon={faExpandAlt} className="h-5 w-5" /> {/* Icono de pantalla completa */}
-            </button>
+              {/* Botón para activar pantalla completa */}
+              <button
+                onClick={handleFullscreen}
+                className="text-gray-400 hover:text-gray-600 bg-white bg-opacity-70 rounded-full p-2"
+              >
+                <FontAwesomeIcon icon={faExpandAlt} className="h-5 w-5" />
+              </button>
             </div>
           </div>
-          <img
-            loading="lazy"
-            src={photo}
-            alt="Koenigsegg Agera"
-            className="w-full max-w-md mt-4 object-contain"
-          />
+
+          {/* Model Viewer */}
+          <model-viewer
+            ref={modelViewerRef}
+            src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
+            alt="Modelo en AR"
+            ar
+            ar-modes="scene-viewer quick-look webxr"
+            ar-scale="auto"
+            camera-controls
+            auto-rotate
+            environment-image="neutral"
+            className="w-full max-w-md"
+          ></model-viewer>
         </div>
       </div>
     </section>
