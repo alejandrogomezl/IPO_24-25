@@ -1,0 +1,230 @@
+/* home.css */
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745; /* Verde indicando éxito */
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Otros estilos existentes del Home */
+.home-container {
+  font-family: Arial, sans-serif;
+  padding: 0 20px;
+}
+
+
+/* Fondo general de la página */
+ body {
+  background-color: #e9e6e6; /* Fondo gris claro */
+ }
+
+/* Contenedor principal */
+.home-container {
+  padding: 0 20px;
+}
+
+/* Sección de vehículos */
+.vehicle-section {
+  margin-bottom: 40px;
+}
+
+/* Estilo específico para las tarjetas de vehículos */
+.vehicle-list > div {
+  background-color: #ffffff; /* Fondo blanco para cada tarjeta */
+  border-radius: 10px; /* Bordes redondeados para un mejor diseño */
+  border: 1px solid #e0e0e0; /* Borde sutil para diferenciar las tarjetas del fondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir una sombra para hacer que la tarjeta "se levante" */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición para efecto al pasar el ratón */
+}
+
+/* Añadir un efecto de hover para mejorar la interacción */
+.vehicle-list > div:hover {
+  transform: translateY(-5px); /* Elevar un poco la tarjeta cuando el usuario la pase el ratón por encima */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Incrementar la sombra al pasar el ratón por encima */
+}
+
+/* Estilo de las imágenes dentro de las tarjetas */
+.vehicle-list img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.home-container {
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+  }
+  
+  .hero-section {
+    background-color: #2f94ff; /* Fondo azul oscuro */
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+    min-height: 250px; /* Definir un tamaño mínimo de altura para que los botones puedan posicionarse bien */
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-content h2 {
+    font-size: 32px;
+    color: #fff; /* Texto blanco para el contraste */
+  }
+  
+  .hero-actions {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .invoice-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #0353a8; /* Azul más oscuro */
+    color: #fff;
+    border: none;
+    padding: 40px 76px; /* Botón más grande */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .invoice-button:hover {
+    background-color: #002a70; /* Azul aún más oscuro al pasar el cursor */
+    transform: translateY(-2px); /* Efecto de elevación en hover */
+  }
+  
+  .mechanic-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color:#0353a8; /* Azul más oscuro */
+    color: #fff;
+    border: none;
+    padding: 40px 50px; /* Botón más grande */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mechanic-button:hover {
+    background-color: #002a70; /* Azul más oscuro al pasar el cursor */
+    transform: translateY(-2px);
+  }
+  
+  .hero-image {
+    position: absolute;
+    left: 20%;
+    bottom: 10px;
+    width: 400px;
+    height: auto;
+    transform: translateX(-50%);
+    border-radius: 10px;
+  }
+  
+  .vehicle-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-header h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .view-all-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .load-more-section {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .load-more-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .load-more-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Additional styles for vehicle list */
+  .vehicle-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  /* home.css */
+
+/* Actualiza la sección de vehículos populares para mostrarse en una fila horizontal */
+/* home.css */
+
+/* --- VEHICLE LIST STYLES (POPULAR CARS) --- */
+.popular-vehicles .vehicle-list {
+    display: flex;
+    flex-direction: row; /* Los vehículos se mostrarán en fila horizontal */
+    gap: 20px; /* Espacio entre los vehículos */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    padding-bottom: 20px; /* Añade espacio inferior para separar del borde */
+    scroll-behavior: smooth; /* Para un desplazamiento más suave */
+  }
+  
+  
+  .popular-vehicles .vehicle-list > div {
+    
+    flex: 0 0 auto; /* Evitar que las tarjetas se reduzcan a menos de su contenido */
+    width: flex; /* Define un ancho fijo o mínimo para cada tarjeta */
+    min-width: 100px; /* Asegúrate de que cada tarjeta tenga un ancho mínimo adecuado */
+    max-width: flex; /* Puedes ajustar el ancho máximo si necesitas */
+  }
+  
+  /* Personalizar el Scrollbar */
+  .vehicle-list::-webkit-scrollbar {
+    height: 10px; /* Altura del scrollbar */
+  }
+  
+  .vehicle-list::-webkit-scrollbar-thumb {
+    background: #007bff; /* Color del scrollbar */
+    border-radius: 10px;
+  }
+  
+  .vehicle-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Fondo del scrollbar */
+  }
+  
+  

@@ -1,274 +1,92 @@
 .catalog {
-    position: relative;
-    width: 304px;
-    height: 388px;
-    background-color: var(--primary-0);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .catalog .car-name {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    position: absolute;
-    top: 24px;
-    left: 24px;
-  }
-  
-  .catalog .text-wrapper {
-    position: relative;
-    width: 173px;
-    margin-top: -1.00px;
-    font-family: var(--bold-type-20-font-family);
-    font-weight: var(--bold-type-20-font-weight);
-    color: var(--secondary-500);
-    font-size: var(--bold-type-20-font-size);
-    letter-spacing: var(--bold-type-20-letter-spacing);
-    line-height: var(--bold-type-20-line-height);
-    font-style: var(--bold-type-20-font-style);
-  }
-  
-  .catalog .div {
-    position: relative;
-    width: 128px;
-    height: 20px;
-    font-family: var(--bold-type-14-font-family);
-    font-weight: var(--bold-type-14-font-weight);
-    color: var(--secondary-300);
-    font-size: var(--bold-type-14-font-size);
-    letter-spacing: var(--bold-type-14-letter-spacing);
-    line-height: var(--bold-type-14-line-height);
-    white-space: nowrap;
-    font-style: var(--bold-type-14-font-style);
-  }
-  
-  .catalog .like {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 24px;
-    left: 256px;
-  }
-  
-  .catalog .price {
-    display: inline-flex;
-    flex-direction: column;
-    height: 44px;
-    align-items: flex-start;
-    gap: 4px;
-    position: absolute;
-    top: 320px;
-    left: 24px;
-  }
-  
-  .catalog .text-wrapper-2 {
-    width: 116px;
-    height: 44px;
-    font-family: "Plus Jakarta Sans-Bold", Helvetica;
-    font-weight: 700;
-    color: var(--secondary-500);
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: relative;
-    margin-top: -1.00px;
-  }
-  
-  .catalog .button-rental {
-    display: flex;
-    width: 116px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 0px 20px;
-    position: absolute;
-    top: 320px;
-    left: 164px;
-    background-color: var(--primary-500);
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .catalog .button-rental:hover()
-  .catalog .text-wrapper-3 {
-    position: relative;
-    width: 76px;
-    font-family: var(--semibold-type-16-font-family);
-    font-weight: var(--semibold-type-16-font-weight);
-    color: var(--primary-0);
-    font-size: var(--semibold-type-16-font-size);
-    text-align: center;
-    letter-spacing: var(--semibold-type-16-letter-spacing);
-    line-height: var(--semibold-type-16-line-height);
-    font-style: var(--semibold-type-16-font-style);
-  }
-  
-  .catalog .spesification {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 16px;
-    position: absolute;
-    top: 272px;
-    left: 24px;
-  }
-  
-  .catalog .div-2 {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 6px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .catalog .img {
-    position: relative;
-    width: 24px;
-    height: 24px;
-  }
-  
-  .catalog .text-wrapper-4 {
-    width: 28px;
-    height: 24px;
-    font-family: var(--medium-type-14-font-family);
-    font-weight: var(--medium-type-14-font-weight);
-    color: var(--secondary-300);
-    font-size: var(--medium-type-14-font-size);
-    letter-spacing: var(--medium-type-14-letter-spacing);
-    line-height: var(--medium-type-14-line-height);
-    white-space: nowrap;
-    position: relative;
-    margin-top: -1.00px;
-    font-style: var(--medium-type-14-font-style);
-  }
-  
-  .catalog .car {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 4px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .catalog .overlap-group {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    top: 2px;
-    left: 2px;
-    background-image: url(./img/circle-4.svg);
-    background-size: 100% 100%;
-  }
-  
-  .catalog .circle {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 2px;
-    left: 2px;
-    background-color: var(--primary-0);
-    border-radius: 20px;
-  }
-  
-  .catalog .circle-2 {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    top: 4px;
-    left: 4px;
-  }
-  
-  .catalog .circle-3 {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    top: 6px;
-    left: 6px;
-    background-color: var(--primary-0);
-    border-radius: 20px;
-  }
-  
-  .catalog .rectangle {
-    width: 2px;
-    height: 4px;
-    top: 15px;
-    left: 9px;
-    position: absolute;
-    background-color: var(--secondary-300);
-  }
-  
-  .catalog .rectangle-2 {
-    width: 4px;
-    height: 2px;
-    top: 9px;
-    left: 15px;
-    position: absolute;
-    background-color: var(--secondary-300);
-  }
-  
-  .catalog .rectangle-3 {
-    width: 4px;
-    height: 2px;
-    top: 9px;
-    left: 1px;
-    position: absolute;
-    background-color: var(--secondary-300);
-  }
-  
-  .catalog .text-wrapper-5 {
-    position: relative;
-    width: 48px;
-    height: 24px;
-    margin-top: -1.00px;
-    font-family: "Plus Jakarta Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: var(--secondary-300);
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .catalog .text-wrapper-6 {
-    position: relative;
-    width: 60px;
-    height: 24px;
-    margin-top: -1.00px;
-    font-family: "Plus Jakarta Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: var(--secondary-300);
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .catalog .overlap {
-    position: absolute;
-    width: 304px;
-    height: 123px;
-    top: 112px;
-    left: 0;
-  }
-  
-  .catalog .shadow {
-    position: absolute;
-    width: 304px;
-    height: 68px;
-    top: 55px;
-    left: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgb(255, 255, 255) 100%
-    );
-  }
-  
-  .catalog .car-2 {
-    position: absolute;
-    width: 232px;
-    height: 105px;
-    top: 0;
-    left: 36px;
-  }
-  
+  width: 304px;
+  padding: 15px;
+  background-color: var(--primary-0);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reducir el espacio entre los elementos */
+}
+
+.catalog:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.car-name {
+  font-weight: bold;
+  color: var(--secondary-500);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.car-2 {
+  width: 100%;
+  height: 130px; /* Ajuste de la altura para evitar huecos */
+  border-radius: 5px;
+  object-fit: cover; 
+}
+
+.spesification {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Envolver especificaciones para mantenerlas compactas */
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.spesification div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--secondary-300);
+}
+
+.price-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px; /* Espaciado entre las especificaciones y el precio/botón */
+}
+
+.price {
+  font-weight: bold;
+  color: var(--secondary-500);
+  font-size: 25px;
+}
+
+.button-rental {
+  margin: 20px auto 0 auto; /* Centrar el botón horizontalmente */
+  padding: 15px 40px; /* Hacer el botón más grande */
+  background-color: #007bff; /* Azul brillante */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  border-radius: 10px; /* Aumentar el radio del borde para un look más moderno */
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px; /* Letra más grande para destacar */
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añadir sombra para darle mayor prominencia */
+}
+
+.button-rental:hover {
+  background-color: #0056b3;
+  transform: translateY(-4px); /* Efecto más pronunciado al pasar el cursor */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más fuerte al pasar el ratón */
+}
