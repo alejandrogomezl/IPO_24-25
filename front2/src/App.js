@@ -1,9 +1,11 @@
 // App.js
 import React from 'react';
+import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import Footer from  './components/Footer';
 import Home from './pages/Home';
+import CarBuy from './pages/CarBuy';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
 
     <Routes>
         <Route path="/" element = {<Home />} />
+        <Route path="/details" element = {<CarBuy />} />
     </Routes>
 
     <Footer />
