@@ -21,8 +21,8 @@ export default function Inquiry() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Navegar a MechInquiry pasando los datos del formulario
-    navigate('/mech-inquiry', { state: { issues, description } });
+    // Navegar a Home.jsx con un estado indicando que se envió la solicitud
+    navigate('/', { state: { inquirySent: true } });
   };
 
   return (

@@ -11,7 +11,7 @@ function CarCard({ vehicle }) {
     <div className="catalog">
       <div className="car-name">
         <div className="text-wrapper">{vehicle.make} {vehicle.model}</div>
-        <img className="like" src="/assets/images/like.svg" alt="Like" />
+        
       </div>
       <img className="car-2" src={vehicle.image} alt={`${vehicle.make} ${vehicle.model}`} />
       

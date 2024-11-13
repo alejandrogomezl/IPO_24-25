@@ -1,31 +1,45 @@
 // Home.jsx
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import VehicleList from '../components/VehicleList';
 import '../assets/css/home.css';
+import Koenissegg from '../assets/img/koenissegg.png';
 
 export default function Home() {
-  const navigate =useNavigate();
-  // Estado para manejar cuántos vehículos se muestran en "Recommendation Cars"
-  const [recommendationLimit, setRecommendationLimit] = useState(10);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [showNotification, setShowNotification] = useState(false);
 
-  // Función para manejar el evento "See More"
-  const handleSeeMore = () => {
-    setRecommendationLimit(prevLimit => prevLimit + 10); // Incrementa el límite en 10 cada vez que se pulsa "See More"
-  };
+  useEffect(() => {
+    // Si se recibe el estado "inquirySent" desde la navegación, mostrar la notificación
+    if (location.state?.inquirySent) {
+      setShowNotification(true);
+      // Ocultar la notificación después de 3 segundos
+      setTimeout(() => {
+        setShowNotification(false);
+      }, 3000);
+    }
+  }, [location.state]);
+
+  // Función para manejar el clic en "Contact Mechanic"
   const handleContactMechanic = () => {
-    navigate('/inquiry'); // Navegar a la página de Inquiry
+    navigate('/inquiry');
   };
 
   return (
     <div className="home-container">
+      {showNotification && (
+        <div className="notification">
+          Inquiry has been sent successfully!
+        </div>
+      )}
       <header className="hero-section">
         <div className="hero-content">
           <h2>Having Any Issue With Your Car?</h2>
         </div>
         <button className="invoice-button">My Invoices</button>
         <button className="mechanic-button" onClick={handleContactMechanic}>Contact Mechanic</button>
-        <img className="hero-image" src="/assets/images/koenigsegg.png" alt="Car Hero" />
+        <img className="hero-image" src={Koenissegg} alt="Car Hero" />
       </header>
 
       <section className="vehicle-section popular-vehicles">
@@ -33,7 +47,6 @@ export default function Home() {
           <h3>Popular Cars</h3>
           <button className="view-all-button">View All</button>
         </div>
-        {/* Limitamos el número de vehículos mostrados a 5 */}
         <VehicleList start={0} limit={5} />
       </section>
 
@@ -41,13 +54,11 @@ export default function Home() {
         <div className="section-header">
           <h3>Recommendation Car</h3>
         </div>
-        {/* Mostramos los vehículos desde el índice 5 en adelante, con un límite que se puede incrementar */}
-        <VehicleList start={5} limit={recommendationLimit} />
+        <VehicleList start={5} limit={10} />
       </section>
 
       <footer className="load-more-section">
-        {/* Botón para cargar más vehículos */}
-        <button className="load-more-button" onClick={handleSeeMore}>Show more cars</button>
+        <button className="load-more-button">Show more cars</button>
       </footer>
     </div>
   );

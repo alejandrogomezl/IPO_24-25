@@ -1,4 +1,25 @@
 /* home.css */
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745; /* Verde indicando éxito */
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Otros estilos existentes del Home */
+.home-container {
+  font-family: Arial, sans-serif;
+  padding: 0 20px;
+}
+
+
 /* Fondo general de la página */
  body {
   background-color: #e9e6e6; /* Fondo gris claro */
@@ -109,9 +130,9 @@
   
   .hero-image {
     position: absolute;
-    left: 50%;
+    left: 20%;
     bottom: 10px;
-    width: 300px;
+    width: 400px;
     height: auto;
     transform: translateX(-50%);
     border-radius: 10px;
