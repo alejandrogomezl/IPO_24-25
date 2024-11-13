@@ -6,75 +6,46 @@ import heart from "../assets/img/heart.svg";
 import notify from "../assets/img/notify.svg";
 import setting from "../assets/img/setting.svg";
 import search from "../assets/img/search.svg";
-import "../assets/css/header.css";
 
 export default function Header() {
   return (
-    <div className="nav-bar-top">
-      <div className="profil-notification">
-        <div className="overlap-group-wrapper">
-          <div className="overlap-group">
-            <Link to="/profile">
-              <img className="icon-instance-node" alt="Profile" src={fucker} />
-            </Link>
-            <Link to="/profile">
-              <div className="button" />
-            </Link>
-          </div>
-        </div>
-
-        <div className="overlap-group-wrapper">
-          <div className="overlap-group">
-            <Link to="/favorites">
-              <img className="icon-instance-node" alt="Favorites" src={heart} />
-            </Link>
-            <Link to="/favorites">
-              <div className="button" />
-            </Link>
-          </div>
-        </div>
-
-        <div className="overlap-group-wrapper">
-          <div className="overlap-group">
-            <Link to="/notifications">
-              <img className="icon-instance-node" alt="Notifications" src={notify} />
-            </Link>
-            <Link to="/notifications">
-              <div className="button" />
-            </Link>
-            <div className="notif" />
-          </div>
-        </div>
-
-        <div className="overlap-group-wrapper">
-          <div className="overlap-group">
-            <Link to="/settings">
-              <img className="icon-instance-node" alt="Settings" src={setting} />
-            </Link>
-            <Link to="/settings">
-              <div className="button" />
-            </Link>
-          </div>
-        </div>
-
-        <div className="profil" />
-      </div>
-
-      <Link to="/">
-        <img className="logo" alt="Logo" src={logo} />
+    <div className="flex flex-col sm:flex-row items-center justify-between px-4 py-4 bg-gray-50 border-b border-gray-300">
+      {/* Logo */}
+      <Link to="/" className="mb-2 sm:mb-0 flex-shrink-0">
+        <img src={logo} alt="Logo" className="h-8" />
       </Link>
 
-      <div className="search">
-        <div className="overlap">
-          <input
-            type="text"
-            className="text-wrapper"
-            placeholder="Search something here"
-          />
-          <Link to="/search">
-            <img className="icon-instance-node" alt="Search" src={search} />
-          </Link>
-        </div>
+      {/* Search Bar */}
+      <div className="relative flex items-center w-full sm:max-w-md mb-2 sm:mb-0">
+        <input
+          type="text"
+          placeholder="Search something here"
+          className="w-full px-4 py-2 text-gray-700 bg-white border rounded-full outline-none border-gray-300 focus:border-blue-500"
+        />
+        <Link to="/search" className="absolute right-3">
+          <img src={search} alt="Search" className="h-5 w-5 text-gray-500" />
+        </Link>
+      </div>
+
+      {/* Notification and Profile Icons */}
+      <div className="flex items-center space-x-3 sm:space-x-4">
+        <Link to="/profile" className="relative">
+          <img src={fucker} alt="Profile" className="h-6 w-6" />
+          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
+        </Link>
+        <Link to="/favorites" className="relative">
+          <img src={heart} alt="Favorites" className="h-6 w-6" />
+          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
+        </Link>
+        <Link to="/notifications" className="relative">
+          <img src={notify} alt="Notifications" className="h-6 w-6" />
+          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
+          <div className="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 rounded-full"></div>
+        </Link>
+        <Link to="/settings" className="relative">
+          <img src={setting} alt="Settings" className="h-6 w-6" />
+          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
+        </Link>
       </div>
     </div>
   );
