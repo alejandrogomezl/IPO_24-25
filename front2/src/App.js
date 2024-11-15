@@ -1,5 +1,6 @@
 // App.js
 import React from 'react';
+import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import Footer from  './components/Footer';
@@ -7,6 +8,7 @@ import Home from './pages/Home';
 import VehicleList from './components/VehicleList';
 import Inquiry from './pages/Inquiry';
 import MechInquiry from './pages/mechInquiry';
+import CarBuy from './pages/CarBuy';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/" element={<VehicleList />} />
         <Route path="/inquiry" element={<Inquiry />} />
         <Route path="/mech-inquiry" element={<MechInquiry />} />
+        <Route path="/details" element = {<CarBuy />} />
     </Routes>
 
     <Footer />
