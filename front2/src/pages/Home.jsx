@@ -9,6 +9,11 @@ export default function Home() {
   const navigate = useNavigate();
   const location = useLocation();
   const [showNotification, setShowNotification] = useState(false);
+  const [recommendationLimit, setRecommendationLimit] = useState(10);
+
+  const handleSeeMore = () => {
+    setRecommendationLimit(prevLimit => prevLimit + 10); // Incrementa el límite en 10 cada vez que se pulsa "See More"
+  };
 
   useEffect(() => {
     // Si se recibe el estado "inquirySent" desde la navegación, mostrar la notificación
@@ -54,11 +59,11 @@ export default function Home() {
         <div className="section-header">
           <h3>Recommendation Car</h3>
         </div>
-        <VehicleList start={5} limit={10} />
+        <VehicleList start={5} limit={recommendationLimit} />
       </section>
 
       <footer className="load-more-section">
-        <button className="load-more-button">Show more cars</button>
+        <button className="load-more-button" onClick={handleSeeMore}>Show more cars</button>
       </footer>
     </div>
   );
