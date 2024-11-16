@@ -77,8 +77,10 @@
   }
   
   .hero-content h2 {
-    font-size: 32px;
-    color: #fff; /* Texto blanco para el contraste */
+    font-family: "Plus Jakarta Sans-SemiBold", Helvetica;
+    font-weight: 550;
+    color: #ffffff;
+    font-size: 32px; /* Texto blanco para el contraste */
   }
   
   .hero-actions {
@@ -151,8 +153,10 @@
   }
   
   .section-header h3 {
-    font-size: 24px;
-    color: #333;
+    font-family: "Plus Jakarta Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #90a3bf;
+    font-size: 16px;
   }
   
   .view-all-button {

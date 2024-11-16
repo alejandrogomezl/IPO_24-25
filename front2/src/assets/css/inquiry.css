@@ -7,11 +7,14 @@
     max-width: 600px; /* Ancho máximo de la página */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    font-family: Arial, sans-serif;
-  }
+    font-family: "Plus Jakarta Sans-SemiBold", Helvetica;
+}
   
   .inquiry-container h2 {
-    font-size: 36px; /* Aumentar el tamaño de la letra */
+    font-weight: 600;
+    color: #1b1b1b;
+    font-size: 36px;
+    letter-spacing: 0;
     margin-top: 10px; /* Reducir el espacio entre el título y la parte superior del contenedor */
     margin-bottom: 20px;
   }
@@ -50,9 +53,10 @@
   }
   
   .inquiry-submit-button {
+    font-family: "Arial", sans-serif;
     width: 130px; /* Reducir un poco el tamaño del botón */
     padding: 10px; /* Reducir el espaciado interno del botón */
-    font-size: 16px; /* Reducir el tamaño de la letra */
+    font-size: 17px; /* Reducir el tamaño de la letra */
     background-color: #007bff;
     color: #fff;
     border: none;
