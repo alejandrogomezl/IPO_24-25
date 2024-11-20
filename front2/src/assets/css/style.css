@@ -1,7 +1,25 @@
-.catalog {
+.vehicles-container {
+  display: flex;
+  align-items: flex-start; /* Alinear elementos al inicio verticalmente */
+  gap: 1rem; /* Separar el botón de los vehículos */
+}
+
+.vehicle-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.new-vehicle {
+  flex: 3; /* Opcional: Controlar el tamaño del "Añadir coche" */
+}
+.vehicle-list {
+  flex: 4; /* Hacer que ocupe más espacio horizontal */
+}
+ .catalog {
   width: 304px;
   padding: 15px;
-  background-color: var(--primary-0);
+  background-color: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
