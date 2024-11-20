@@ -1,0 +1,101 @@
+/* addCar.css */
+.add-car-container {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Plus Jakarta Sans-SemiBold", Helvetica;
+}
+
+.add-car-container h2 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el título */
+}
+
+.add-car-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.separator {
+    width: 100%;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 20px; /* Espacio entre columnas */
+}
+
+.form-group-half {
+    flex: 1; /* Cada columna ocupa la mitad del ancho */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Asegura que el input llene el espacio */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+}
+
+.form-group-half input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Ajusta el ancho al contenedor */
+    box-sizing: border-box;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.success-container {
+    background-color: #28a745; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  

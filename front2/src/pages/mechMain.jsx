@@ -53,8 +53,10 @@ export default function MechMain() {
           <h3>Popular Cars</h3>
           <button className="view-all-button">View All</button>
         </div>
-        <NewVehicle/>
-        <VehicleList start={0} limit={5} />
+        <div className='vehicles-container'>
+          <NewVehicle/>
+          <VehicleList start={0} limit={5} />
+        </div>
       </section>
 
       <section className="vehicle-section recommended-vehicles">

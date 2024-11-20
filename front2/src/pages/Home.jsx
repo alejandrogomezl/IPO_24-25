@@ -52,14 +52,14 @@ export default function Home() {
           <h3>Popular Cars</h3>
           <button className="view-all-button">View All</button>
         </div>
-        <VehicleList start={0} limit={5} />
+        <VehicleList start={0} limit={6} />
       </section>
 
       <section className="vehicle-section recommended-vehicles">
         <div className="section-header">
           <h3>Recommendation Car</h3>
         </div>
-        <VehicleList start={5} limit={recommendationLimit} />
+        <VehicleList start={6} limit={recommendationLimit} />
       </section>
 
       <footer className="load-more-section">
