@@ -9,6 +9,8 @@ import VehicleList from './components/VehicleList';
 import Inquiry from './pages/Inquiry';
 import MechInquiry from './pages/mechInquiry';
 import CarBuy from './pages/CarBuy';
+import MechMain from './pages/mechMain'
+import AddCar from './pages/addCar';
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
         <Route path="/" element={<VehicleList />} />
         <Route path="/inquiry" element={<Inquiry />} />
         <Route path="/mech-inquiry" element={<MechInquiry />} />
+        <Route path="/details" element = {<CarBuy />} />
+        <Route path="/mech-main"element = {<MechMain />} />
+        <Route path="/add-car"element = {<AddCar />} />
         <Route path="/vehicles/:id" element = {<CarBuy />} />
     </Routes>
 

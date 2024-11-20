@@ -4,8 +4,9 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import VehicleList from '../components/VehicleList';
 import '../assets/css/home.css';
 import Koenissegg from '../assets/img/koenissegg.png';
+import NewVehicle from '../components/NewVehicle'
 
-export default function Home() {
+export default function MechMain() {
   const navigate = useNavigate();
   const location = useLocation();
   const [showNotification, setShowNotification] = useState(false);
@@ -52,14 +53,17 @@ export default function Home() {
           <h3>Popular Cars</h3>
           <button className="view-all-button">View All</button>
         </div>
-        <VehicleList start={0} limit={6} />
+        <div className='vehicles-container'>
+          <NewVehicle/>
+          <VehicleList start={0} limit={5} />
+        </div>
       </section>
 
       <section className="vehicle-section recommended-vehicles">
         <div className="section-header">
           <h3>Recommendation Car</h3>
         </div>
-        <VehicleList start={6} limit={recommendationLimit} />
+        <VehicleList start={5} limit={recommendationLimit} />
       </section>
 
       <footer className="load-more-section">
