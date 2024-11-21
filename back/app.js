@@ -19,7 +19,7 @@ app.use('/api/users', userRoutes);  // Añadimos las rutas de usuarios
 
 
 // Conexión a MongoDB
-mongoose.connect('mongodb://localhost:27017/carup')
+mongoose.connect('mongodb://admin:123456789012@localhost:27017/carup')
 .then(() => console.log("Conectado a MongoDB"))
 .catch(err => console.error(err));
 
