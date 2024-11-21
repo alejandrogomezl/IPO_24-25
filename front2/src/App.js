@@ -11,6 +11,7 @@ import MechInquiry from './pages/mechInquiry';
 import CarBuy from './pages/CarBuy';
 import MechMain from './pages/mechMain'
 import AddCar from './pages/addCar';
+import Payments from './pages/PaymentPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/mech-main"element = {<MechMain />} />
         <Route path="/add-car"element = {<AddCar />} />
         <Route path="/vehicles/:id" element = {<CarBuy />} />
+        <Route path="/payment/:id" element = {<Payments />} />
     </Routes>
 
     <Footer />
