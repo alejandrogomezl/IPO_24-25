@@ -11,7 +11,7 @@ const vehicleSchema = new mongoose.Schema({
   inventoryCount: { type: Number, default: 1 },
   createdAt: { type: Date, default: Date.now },
   image: { type: String },
-  available: { type: Boolean, default: true }
+  available: { type: Boolean, required: true, default: true }
 });
 
 module.exports = mongoose.model('Vehicle', vehicleSchema);
