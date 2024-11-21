@@ -1,18 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Confirmation({ prevStep }) {
+function Confirmation({ prevStep, setConfirmation, handleSubmit }) {
+  const [formData, setFormData] = useState({
+    agreeMarketing: false,
+    agreeTerms: false,
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.checked,
+    });
+  };
+
+  const handleFinalSubmit = (e) => {
+    e.preventDefault();
+    setConfirmation(formData); // Guarda los datos en el estado principal
+    handleSubmit(); // Realiza el console.log
+  };
+
   return (
-    <div className="space-y-6 animate-fadeIn">
+    <form onSubmit={handleFinalSubmit} className="space-y-6">
       <h2 className="text-xl font-semibold">Confirmation</h2>
-      <p className="text-gray-500 text-sm">We are getting to the end. Just a few clicks and your rental is ready!</p>
       <div className="space-y-4">
         <div className="flex items-center">
-          <input type="checkbox" id="marketing" className="mr-2" />
-          <label htmlFor="marketing" className="text-gray-700">I agree with sending marketing and newsletter emails.</label>
+          <input
+            type="checkbox"
+            name="agreeMarketing"
+            checked={formData.agreeMarketing}
+            onChange={handleChange}
+            className="mr-2"
+          />
+          <label className="text-gray-700">I agree with marketing emails.</label>
         </div>
         <div className="flex items-center">
-          <input type="checkbox" id="terms" className="mr-2" />
-          <label htmlFor="terms" className="text-gray-700">I agree with terms and conditions.</label>
+          <input
+            type="checkbox"
+            name="agreeTerms"
+            checked={formData.agreeTerms}
+            onChange={handleChange}
+            className="mr-2"
+            required
+          />
+          <label className="text-gray-700">I agree with terms and conditions.</label>
         </div>
       </div>
       <div className="flex justify-between">
@@ -24,12 +54,13 @@ function Confirmation({ prevStep }) {
           Back
         </button>
         <button
+          type="submit"
           className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-transform transform hover:scale-105"
         >
           Rent Now
         </button>
       </div>
-    </div>
+    </form>
   );
 }
 

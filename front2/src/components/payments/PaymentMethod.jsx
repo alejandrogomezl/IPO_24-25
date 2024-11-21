@@ -2,23 +2,33 @@ import React, { useState } from 'react';
 
 function PaymentMethod({ nextStep, prevStep }) {
   const [paymentType, setPaymentType] = useState(null); // Estado para la opción seleccionada
+  const [error, setError] = useState(''); // Estado para los errores
 
   const handlePaymentChange = (type) => {
     setPaymentType(type);
+    setError(''); // Limpia el mensaje de error si hay una selección
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!paymentType) {
+      setError('Please select a payment method.');
+      return;
+    }
+
+    nextStep();
   };
 
   return (
     <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        nextStep();
-      }}
+      onSubmit={handleSubmit}
       className="space-y-6 animate-fadeIn"
     >
       <h2 className="text-xl font-semibold">Payment Method</h2>
       <p className="text-gray-500 text-sm">Please select your payment method</p>
-      
-      {/* Opciones de pago */}
+
+      {/* Opciones de método de pago */}
       <div className="space-y-4">
         <div className="flex items-center">
           <input
@@ -65,6 +75,9 @@ function PaymentMethod({ nextStep, prevStep }) {
           <label htmlFor="paypal" className="text-gray-700">PayPal</label>
         </div>
       </div>
+
+      {/* Mensaje de error */}
+      {error && <p className="text-red-500 text-sm">{error}</p>}
 
       {/* Botones de navegación */}
       <div className="flex justify-between">
