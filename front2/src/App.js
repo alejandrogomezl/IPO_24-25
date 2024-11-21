@@ -12,6 +12,7 @@ import CarBuy from './pages/CarBuy';
 import MechMain from './pages/mechMain'
 import AddCar from './pages/addCar';
 import Payments from './pages/PaymentPage';
+import NFC from './pages/NFCReaderPage';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/add-car"element = {<AddCar />} />
         <Route path="/vehicles/:id" element = {<CarBuy />} />
         <Route path="/payment/:id" element = {<Payments />} />
+        <Route path="/nfc" element = {<NFC />} />
     </Routes>
 
     <Footer />
