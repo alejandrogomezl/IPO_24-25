@@ -7,7 +7,6 @@ import CarView from '../components/CarView';
 
 function CarBuy() {
   const { id } = useParams();
-  console.log('id:', id);
   const [vehicle, setVehicle] = useState(null);
 
   useEffect(() => {

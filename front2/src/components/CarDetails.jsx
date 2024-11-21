@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CarDetails({ vehicle }) {
   const specs = [
@@ -32,9 +33,11 @@ function CarDetails({ vehicle }) {
             </div>
             <div className="text-3xl text-gray-900">{vehicle.price} €</div>
           </div>
-          <button className="px-5 py-2 text-base tracking-tight text-center text-white bg-blue-600 rounded transition-transform transform hover:scale-105 hover:bg-blue-700">
-            Buy Now
-          </button>
+          <Link to={`/payment/${vehicle._id}`}>
+            <button className="px-5 py-2 text-base tracking-tight text-center text-white bg-blue-600 rounded transition-transform transform hover:scale-105 hover:bg-blue-700">
+              Buy Now
+            </button>
+        </Link>
         </div>
       </div>
     </div>
