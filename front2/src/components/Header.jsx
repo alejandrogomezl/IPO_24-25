@@ -30,21 +30,25 @@ export default function Header() {
       {/* Notification and Profile Icons */}
       <div className="flex items-center space-x-3 sm:space-x-4">
         <Link to="/profile" className="relative">
-          <img src={fucker} alt="Profile" className="h-6 w-6" />
-          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
+          <div className="relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 border-2 border-gray-300 rounded-full hover:border-gray-400 transition">
+            <img src={fucker} alt="Profile" className="h-5 w-5 sm:h-6 sm:w-6" />
+          </div>
         </Link>
         <Link to="/favorites" className="relative">
-          <img src={heart} alt="Favorites" className="h-6 w-6" />
-          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
+          <div className="relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 border-2 border-gray-300 rounded-full hover:border-gray-400 transition">
+            <img src={heart} alt="Favorites" className="h-5 w-5 sm:h-6 sm:w-6" />
+          </div>
         </Link>
         <Link to="/notifications" className="relative">
-          <img src={notify} alt="Notifications" className="h-6 w-6" />
-          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
-          <div className="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 rounded-full"></div>
+          <div className="relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 border-2 border-gray-300 rounded-full hover:border-gray-400 transition">
+            <img src={notify} alt="Notifications" className="h-5 w-5 sm:h-6 sm:w-6" />
+            <div className="absolute top-1 right-1 w-2.5 h-2.5 bg-red-500 rounded-full"></div>
+          </div>
         </Link>
         <Link to="/settings" className="relative">
-          <img src={setting} alt="Settings" className="h-6 w-6" />
-          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
+          <div className="relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 border-2 border-gray-300 rounded-full hover:border-gray-400 transition">
+            <img src={setting} alt="Settings" className="h-5 w-5 sm:h-6 sm:w-6" />
+          </div>
         </Link>
       </div>
     </div>
