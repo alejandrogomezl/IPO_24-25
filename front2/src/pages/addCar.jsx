@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/css/addCar.css';
 
 export default function AddCar() {
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
   const [formData, setFormData] = useState({
     make: '',
     model: '',
@@ -30,7 +32,7 @@ export default function AddCar() {
     setSuccess(false);
 
     try {
-      const response = await fetch('http://localhost:3000/api/vehicles', {
+      const response = await fetch(backendUrl+'/api/vehicles', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
