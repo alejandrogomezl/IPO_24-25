@@ -1,16 +1,17 @@
 const mongoose = require('mongoose');
 
 const vehicleSchema = new mongoose.Schema({
-  make: { type: String, required: true },  // Marca (ej. Koenigsegg)
-  model: { type: String, required: true }, // Modelo
+  make: { type: String, required: true },
+  model: { type: String, required: true },
   price: { type: Number, required: true },
-  capacity: { type: Number }, // Capacidad (ej. 2 personas)
-  fuelType: { type: String }, // Tipo de combustible (ej. Gasolina)
-  transmission: { type: String }, // Manual o Automático
-  engine: { type: String },  // Tipo de motor
-  inventoryCount: { type: Number, default: 1 },  // Número de unidades disponibles
+  capacity: { type: Number },
+  fuelType: { type: String },
+  transmission: { type: String },
+  engine: { type: String },
+  inventoryCount: { type: Number, default: 1 },
   createdAt: { type: Date, default: Date.now },
-  image: { type: String }, // URL de la imagen
+  image: { type: String },
+  available: { type: Boolean, default: true }
 });
 
 module.exports = mongoose.model('Vehicle', vehicleSchema);
