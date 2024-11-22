@@ -28,7 +28,7 @@ export default function Home() {
 
   // Función para manejar el clic en "Contact Mechanic"
   const handleContactMechanic = () => {
-    navigate('/inquiry');
+    navigate('/identify');
   };
 
   return (
