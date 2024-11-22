@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSyncAlt, faExpandAlt } from '@fortawesome/free-solid-svg-icons';
+import { faExpandAlt } from '@fortawesome/free-solid-svg-icons';
 import '@google/model-viewer';
+import model3D from '../assets/models/car.glb';
 
-function CarView() {
+function CarView({ vehicle }) {
   // Referencia al model-viewer para controlar el modo de pantalla completa
   const modelViewerRef = useRef(null);
 
@@ -14,55 +15,36 @@ function CarView() {
     }
   };
 
-  // Función para reiniciar la rotación del modelo
-  const handleRotate = () => {
-    if (modelViewerRef.current) {
-      modelViewerRef.current.rotation = '0deg'; // Resetear la rotación
-    }
-  };
-
   return (
     <section className="flex flex-col items-center px-4 py-8 sm:px-8 lg:px-16 xl:px-24 bg-gray-50">
       <div className="flex flex-col sm:flex-row max-w-6xl w-full bg-white rounded-xl shadow-md overflow-hidden p-8">
         {/* Información del coche */}
         <div className="flex flex-col w-full sm:w-1/2 space-y-4">
-          <h2 className="text-3xl font-bold text-gray-900">Koenigsegg Agera</h2>
+          <h2 className="text-3xl font-bold text-gray-900">{vehicle.make} {vehicle.model}</h2>
           <p className="text-lg text-gray-500 leading-relaxed">
-            Agera has become the embodiment of Koenigsegg's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
+            This {vehicle.make} {vehicle.model} is a {vehicle.transmission} vehicle with a {vehicle.engine} engine and {vehicle.fuelType} fuel type.
           </p>
           <div className="grid grid-cols-2 gap-4 text-lg text-gray-500 mt-4">
             <div className="flex flex-col">
               <span className="text-gray-400">Capacity</span>
-              <span className="font-semibold text-gray-900">2 Person</span>
+              <span className="font-semibold text-gray-900">{vehicle.capacity} Persons</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-gray-400">Type Car</span>
-              <span className="font-semibold text-gray-900">Sport</span>
+              <span className="text-gray-400">Fuel Type</span>
+              <span className="font-semibold text-gray-900">{vehicle.fuelType}</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-gray-400">Steering</span>
-              <span className="font-semibold text-gray-900">Manual</span>
+              <span className="text-gray-400">Transmission</span>
+              <span className="font-semibold text-gray-900">{vehicle.transmission}</span>
             </div>
             <div className="flex flex-col">
               <span className="text-gray-400">Engine</span>
-              <span className="font-semibold text-gray-900">V8</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-gray-400">Gasoline</span>
-              <span className="font-semibold text-gray-900">70L</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-gray-400">Info1</span>
-              <span className="font-semibold text-gray-900">----</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-gray-400">Info2</span>
-              <span className="font-semibold text-gray-900">----</span>
+              <span className="font-semibold text-gray-900">{vehicle.engine}</span>
             </div>
           </div>
           <div className="flex flex-col mt-8">
-            <span className="text-3xl font-bold text-gray-900">80.000 €</span>
-            <span className="text-lg text-gray-400 line-through">100.000 €</span>
+            <span className="text-lg text-gray-400 line-through">{(vehicle.price * 1.2).toFixed(2)} €</span>
+            <span className="text-3xl font-bold text-gray-900">{vehicle.price} €</span>
           </div>
         </div>
 
@@ -84,8 +66,9 @@ function CarView() {
           {/* Model Viewer */}
           <model-viewer
             ref={modelViewerRef}
-            src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
-            alt="Modelo en AR"
+            // src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
+            src = {model3D}
+            alt={`${vehicle.make} ${vehicle.model} 3D model`}
             ar
             ar-modes="scene-viewer quick-look webxr"
             ar-scale="auto"

@@ -4,11 +4,13 @@ import CarCard from './carCard';
 
 function VehicleList({ start = 0, limit }) {
   const [vehicles, setVehicles] = useState([]);
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/vehicles'); // Asegúrate de que el backend está corriendo en esta URL
+        console.log('backendUrl:', backendUrl);
+        const response = await fetch(backendUrl+'/api/vehicles'); // Asegúrate de que el backend está corriendo en esta URL
         const data = await response.json();
         setVehicles(data);
         console.log(data);
