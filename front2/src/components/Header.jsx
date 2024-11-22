@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { FilterContext } from "../components/context/FilterContext"; // Importar el contexto
 import logo from "../assets/img/logo.svg";
 import fucker from "../assets/img/fucker.svg";
 import heart from "../assets/img/heart.svg";
@@ -8,6 +9,22 @@ import setting from "../assets/img/setting.svg";
 import search from "../assets/img/search.svg";
 
 export default function Header() {
+  const { filter, setFilter } = useContext(FilterContext); // Usar el contexto
+  const filters = ["", "filter-protanopia", "filter-deuteranopia"];
+  const filterNames = {
+    "": "Normal Vision",
+    "filter-protanopia": "Protanopia Filter",
+    "filter-deuteranopia": "Deuteranopia Filter",
+  };
+
+  const toggleFilter = () => {
+    const currentIndex = filters.indexOf(filter);
+    const nextIndex = (currentIndex + 1) % filters.length;
+    const nextFilter = filters[nextIndex];
+    setFilter(nextFilter);
+    alert(filterNames[nextFilter]); // Mostrar alerta con el filtro seleccionado
+  };
+
   return (
     <div className="flex flex-col sm:flex-row items-center justify-between px-4 py-4 bg-gray-50 border-b border-gray-300">
       {/* Logo */}
@@ -27,25 +44,27 @@ export default function Header() {
         </Link>
       </div>
 
-      {/* Notification and Profile Icons */}
+      {/* Notification, Profile Icons, and Toggle Button */}
       <div className="flex items-center space-x-3 sm:space-x-4">
-        <Link to="/profile" className="relative">
+        <Link to="/profile">
           <img src={fucker} alt="Profile" className="h-6 w-6" />
-          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
         </Link>
-        <Link to="/favorites" className="relative">
+        <Link to="/favorites">
           <img src={heart} alt="Favorites" className="h-6 w-6" />
-          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
         </Link>
-        <Link to="/notifications" className="relative">
+        <Link to="/notifications">
           <img src={notify} alt="Notifications" className="h-6 w-6" />
-          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
-          <div className="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 rounded-full"></div>
         </Link>
-        <Link to="/settings" className="relative">
+        <Link to="/settings">
           <img src={setting} alt="Settings" className="h-6 w-6" />
-          <div className="absolute inset-0 rounded-full border border-gray-300 opacity-80"></div>
         </Link>
+        {/* Toggle Daltonism Button */}
+        <button
+          onClick={toggleFilter}
+          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+        >
+          Toggle Filter
+        </button>
       </div>
     </div>
   );
