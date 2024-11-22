@@ -8,11 +8,12 @@ import CarView from '../components/CarView';
 function CarBuy() {
   const { id } = useParams();
   const [vehicle, setVehicle] = useState(null);
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
     const fetchVehicle = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/vehicles/${id}`);
+        const response = await fetch(backendUrl+`/api/vehicles/${id}`);
         const data = await response.json();
         setVehicle(data);
       } catch (error) {
