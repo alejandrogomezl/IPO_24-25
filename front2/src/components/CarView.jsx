@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExpandAlt } from '@fortawesome/free-solid-svg-icons';
 import '@google/model-viewer';
+import model3D from '../assets/models/car.glb';
 
 function CarView({ vehicle }) {
   // Referencia al model-viewer para controlar el modo de pantalla completa
@@ -65,7 +66,8 @@ function CarView({ vehicle }) {
           {/* Model Viewer */}
           <model-viewer
             ref={modelViewerRef}
-            src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
+            // src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
+            src = {model3D}
             alt={`${vehicle.make} ${vehicle.model} 3D model`}
             ar
             ar-modes="scene-viewer quick-look webxr"
